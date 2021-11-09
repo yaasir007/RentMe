@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-puts "Creating 10 cars with make, details"
+puts "Creating 10 cars with make and details"
 
 10.times do 
     cars = Car.new(
