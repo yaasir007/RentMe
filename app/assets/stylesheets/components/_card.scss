@@ -1,7 +1,10 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 12px;
+}
+
 .card-product {
-  margin: 30px;
-  display: flex;
-  justify-items: space-between;
   overflow: hidden;
   height: 120px;
   background: white;
