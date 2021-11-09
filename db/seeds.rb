@@ -13,6 +13,7 @@ puts "Creating 10 cars with make, details"
     cars = Car.new(
         make: Faker::Vehicle.make,
         details: "Model: #{Faker::Vehicle.make_and_model},Color: #{Faker::Vehicle.color},Transmission: #{Faker::Vehicle.transmission},Drive Type: #{Faker::Vehicle.drive_type}",
+        image: ,
         user_id: 1
     )
     cars.save!
