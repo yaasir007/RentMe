@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+puts "Creating 10 cars with make, details"
+
+10.times do 
+    cars = Car.new(
+        make: Faker::Vehicle.make,
+        details: "Model: #{Faker::Vehicle.make_and_model},Color: #{Faker::Vehicle.color},Transmission: #{Faker::Vehicle.transmission},Drive Type: #{Faker::Vehicle.drive_type}",
+        user_id: 1
+    )
+    cars.save!
+end
+puts "Seeds Completed"
