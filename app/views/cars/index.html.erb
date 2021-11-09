@@ -2,6 +2,11 @@
 
 <ul>
  <% @cars.each do |car| %>
-<li align="center"><%= link_to car.make, car_path(car) %></li>
+<li><%= link_to car.make, car_path(car) %></li>
+<%# <%= cl_image_tag("wcedp11msfvsce2d2l8m",
+      width: 200, height: 100, crop: :fill) %> 
 <% end %>
 </ul>
+
+
+  
