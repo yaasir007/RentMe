@@ -1,0 +1,17 @@
+<h1>My Bookings</h1>
+
+<ol><% @bookings.each do |booking|%>
+    <% if @user.id == booking.user_id  %>
+        <li>Starting Date - <%=booking.start_date%>. <br> Ending Date - <%=booking.end_date%> <br>
+        Comment: <%=booking.comment%> <br><br>
+    <%= link_to "Cancel Booking",car_destroy_path(@car, booking), method: :delete, data: { confirm: "Are you sure?" }%>
+        </li>
+        <br><br>
+    <% end %>
+    <%end%>
+</ol>
+
+
+<br>
+
+<%= link_to "Back", cars_path %>
