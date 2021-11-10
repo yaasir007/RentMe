@@ -1,13 +1,15 @@
+<div align="center">
 <h1>Car Details</h1>
-
-<%= @car.make %>
+Make: <%= @car.make %><br>
 <%= @car.details %>
-<br><br>
-<%= link_to  "Back", cars_path %>
-<br><br>
-<%= link_to "Book Me", new_car_booking_path(@car) %>
-<br><br>
-<%= link_to "My Booking", car_bookings_path(@car)  %>
-<br><br>
-<%= link_to "Car Reviews", car_reviews_path(@car)  %>
 
+<br><br>
+<%= link_to  "Back", cars_path , class: "btn btn-info" %>
+&nbsp
+<%= link_to "Book Me", new_car_booking_path(@car), class: "btn btn-info" %>
+&nbsp
+<%= link_to "My Booking", car_bookings_path(@car), class: "btn btn-info"  %>
+&nbsp
+<%= link_to "Car Reviews", car_reviews_path(@car), class: "btn btn-info"  %>
+
+</div>

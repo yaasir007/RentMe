@@ -2,9 +2,10 @@
 <%= f.input :start_date %>
 <%= f.input :end_date %>
 <%= f.input :comment %>
-<%= f.button :submit, "Book Me" %>
+<div align="center">
+<%= f.button :submit, "Book Me" , class: "btn btn-success" %>
 <% end %>
+ &nbsp &nbsp
+<%= link_to "Back", car_path(@car), class: "btn btn-secondary" %>
 
-<br>
-
-<%= link_to "Back", car_path(@car) %>
+</div>
