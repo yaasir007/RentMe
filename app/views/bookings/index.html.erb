@@ -1,7 +1,12 @@
 <h1>My Bookings</h1>
 
-<ul><%@bookings.each do |booking|%>
-    <li><%=booking.start_date%></li>
-    <li><%=booking.end_date%></li>
+<ol><% @bookings.each do |booking|%>
+    <% if @user.id == booking.user_id  %>
+        <li>Starting Date - <%=booking.start_date%>. Ending Date - <%=booking.end_date%>. <%= link_to "Cancel" %> </li>
+    <% end %>
     <%end%>
-</ul>
+</ol>
+
+<br>
+
+<%= link_to "Back", cars_path %>
