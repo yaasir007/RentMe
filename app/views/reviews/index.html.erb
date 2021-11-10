@@ -1,0 +1,12 @@
+<h1>Reviews</h1>
+
+<ul>
+<% @reviews.each do |review| %>
+<li> <%= review.feedback %></li>
+<% end %>
+</ul>
+
+
+
+<%= link_to  "Add a review", new_car_review_path(@car) %> <br><br>
+<%= link_to  "Back", car_path(@car) %>

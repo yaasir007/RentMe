@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   
   resources :cars do
+    resources :reviews
     resources :bookings
+    delete "bookings/:id", to: "bookings#destroy", as: :destroy
   end
 
   devise_scope :user do

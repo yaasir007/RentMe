@@ -2,6 +2,7 @@ class BookingsController < ApplicationController
 
     def index
        @bookings = Booking.all
+       @car = Car.find(params[:car_id])
        @user = current_user
     end
 
@@ -20,9 +21,20 @@ class BookingsController < ApplicationController
         redirect_to car_path(@car)
     end
 
+    def destroy
+        @booking = Booking.find(params[:id])
+        @booking.destroy
+        redirect_to car_bookings_path
+    end
+
+    def show
+        @car = Car.find(params[:id])
+        @booking = Booking.where(booking_id = @booking.id)
+    end
+
     private
 
     def params_booking
-        params.require(:booking).permit(:start_date, :end_date)
+        params.require(:booking).permit(:start_date, :end_date, :comment)
     end
 end
