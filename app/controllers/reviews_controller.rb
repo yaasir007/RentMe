@@ -18,6 +18,7 @@ class ReviewsController < ApplicationController
         @review.user = @user
         @review.save!
         redirect_to car_path(@car)
+        flash[:alert] = "Review Added."
     end
 
     private
