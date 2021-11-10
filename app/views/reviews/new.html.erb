@@ -1,0 +1,8 @@
+<%= simple_form_for [@car, @review] do |f| %>
+  <%= f.input :feedback, html5: true %>
+  <%= f.submit 'Create Review' %>
+<% end %>
+
+<br>
+
+<%= link_to "Back", car_path(@car) %>
