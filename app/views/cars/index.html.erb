@@ -1,16 +1,17 @@
+<br>
 <h1 align="center">List of cars</h1>
 <div class="car-container">
   <% @cars.each do |car| %>
 
   <div class="card-trip">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <img src="https://www.miniusa.com/content/dam/mini/models/jcw/modelsoverview/MINI-JCW-Image-03-1440.jpg.miniusaimg.small.jpeg" />
       <div class="card-trip-infos">
         <div>
           <h2><%= link_to car.make, car_path(car) %></h2>
 
           <p><%=car.details%></p>
         </div>
-      <h2 class="card-trip-pricing">£99.99</h2>
+      <h2 class="card-trip-pricing">$<%= rand(50..100) %>/Day</h2>
       </div>
     </div>
   <% end %>
