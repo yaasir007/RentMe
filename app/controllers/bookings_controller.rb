@@ -2,13 +2,17 @@ class BookingsController < ApplicationController
 
     def index
        @bookings = Booking.all
-       @car = Car.find(params[:car_id])
        @user = current_user
     end
 
     def new
         @car = Car.find(params[:car_id])
         @booking = Booking.new
+    end
+
+    def show
+        @car = Car.find(params[:id])
+        @booking = Booking.where(booking_id = @booking.id)
     end
 
     def create
@@ -25,13 +29,8 @@ class BookingsController < ApplicationController
     def destroy
         @booking = Booking.find(params[:id])
         @booking.destroy
-        redirect_to car_bookings_path
+        redirect_to bookings_path
         flash[:alert] = "Booking Cancelled."
-    end
-
-    def show
-        @car = Car.find(params[:id])
-        @booking = Booking.where(booking_id = @booking.id)
     end
 
     private

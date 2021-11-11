@@ -1,14 +1,13 @@
 <div align="center">
 <h1>My Bookings (<%=@bookings.count %>)</h1>
-
+<h3>Most Recent Bookings</h3>
 <ol><% @bookings.reverse_each do |booking|%>
     <% if @user.id == booking.user_id  %>
-    <h3>Most Recent Bookings</h3>
     <li>Starting Date - <%=booking.start_date%>
     <br> Ending Date - <%=booking.end_date%>
-    <br> Comment: <%=booking.comment%> 
+    <br> Comment: <%=booking.comment%>
     <br><br>
-    <%= link_to "Cancel Booking", car_destroy_path(@car, booking), method: :delete, data: { confirm: "Are you sure?" } %>
+    <%= link_to "Delete", booking_path(booking), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-danger m-2 p-3" %>
     </li>
     <br><br>
     <% end %>

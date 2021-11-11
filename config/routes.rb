@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   
+  resources :bookings, only: [:index, :destroy]
   resources :cars do
     resources :reviews
-    resources :bookings
-    delete "bookings/:id", to: "bookings#destroy", as: :destroy
+    resources :bookings, except: [:index, :destroy]
   end
 
   devise_scope :user do
