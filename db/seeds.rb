@@ -14,7 +14,7 @@ Car.destroy_all
         color:"Black",
         price:120,
         Transmission:"Manual",
-        user_id: 1
+        user_id: rand(1..4)
     )
     cars.save!
     cars = Car.new(
@@ -24,7 +24,7 @@ Car.destroy_all
         color:"White",
         price:40,
         Transmission:"Manual",
-        user_id: 1
+        user_id: rand(1..4)
     )
     cars.save!
 
@@ -35,7 +35,7 @@ Car.destroy_all
         color:"Red",
         price:120,
         Transmission:"Automatic",
-        user_id: 1
+        user_id: rand(1..4)
     )
     cars.save!
 
@@ -46,7 +46,7 @@ Car.destroy_all
         color:"White",
         price:110,
         Transmission:"Automatic",
-        user_id: 1
+        user_id: rand(1..4)
     )
     cars.save!
 
@@ -57,7 +57,7 @@ Car.destroy_all
         color:"Yellow",
         price:140,
         Transmission:"Automatic",
-        user_id: 1
+        user_id: rand(1..4)
     )
     cars.save!
 
@@ -68,7 +68,7 @@ Car.destroy_all
         color:"Metallic Brown",
         price:120,
         Transmission:"Automatic",
-        user_id: 1
+        user_id: rand(1..4)
     )
     cars.save!
 
@@ -79,7 +79,7 @@ Car.destroy_all
         color:"Blue",
         price:25,
         Transmission:"Automatic",
-        user_id: 1
+        user_id: rand(1..4)
     )
     cars.save!
 
@@ -90,7 +90,7 @@ Car.destroy_all
         color:"Grey",
         price:20,
         Transmission:"Automatic",
-        user_id: 1
+        user_id: rand(1..4)
     )
     cars.save!
 
@@ -101,7 +101,7 @@ Car.destroy_all
          color:"Dark grey",
         price:70,
         Transmission:"Automatic",
-        user_id: 1
+        user_id: rand(1..4)
     )
     cars.save!
 
@@ -113,7 +113,7 @@ Car.destroy_all
         color:"Blue",
         price:80,
         Transmission:"Automatic",
-        user_id: 1
+        user_id: rand(1..4)
     )
     cars.save!
     cars = Car.new(
@@ -123,6 +123,127 @@ Car.destroy_all
         color:" Dark Red",
         price:100,
         Transmission:"Automatic",
-        user_id: 1
+        user_id: rand(1..4)
+    )
+    cars.save!
+
+
+cars = Car.new(
+        make: "Toyota Hilux",
+        details: "Fuel-Comsumption: 8L/100km, Engine:2400cc",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636627685/RentMe/clo_b3vpur.jpg",
+        color:"Green",
+        price:120,
+        Transmission:"Manual",
+        user_id: rand(1..4)
+    )
+    cars.save!
+    cars = Car.new(
+        make: "Toyota Hiace",
+        details: "Fuel-Comsumption: 7.8L/100km, Engine:2000cc",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636627740/RentMe/download_11_izc0zu.jpg",
+        color:"White",
+        price:40,
+        Transmission:"Manual",
+        user_id: rand(1..4)
+    )
+    cars.save!
+
+    cars = Car.new(
+        make: "Audi S7",
+        details: "Fuel-Comsumption: 15L/100km, Engine:3600cc",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636627819/RentMe/download_12_xpv8hl.jpg",
+        color:"White",
+        price:120,
+        Transmission:"Automatic",
+        user_id: rand(1..4)
+    )
+    cars.save!
+
+     cars = Car.new(
+        make: "Pagani Huayra",
+        details: "Fuel-Comsumption: 23L/100km, Engine:6.2L V12",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636627893/RentMe/download_13_wb4gpn.jpg",
+        color:"Red",
+        price:250,
+        Transmission:"Automatic",
+        user_id: rand(1..4)
+    )
+    cars.save!
+
+    cars = Car.new(
+        make: "Ferrari 599 GTO",
+        details: "Fuel-Comsumption: 24L/100km, Engine:5.9L V12 N/A ",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636627987/RentMe/download_14_gm1xty.jpg",
+        color:"Red",
+        price:280,
+        Transmission:"Automatic",
+        user_id: rand(1..4)
+    )
+    cars.save!
+
+    cars = Car.new(
+        make: "Aston Martin DB11",
+        details: "Fuel-Comsumption: 20L/100km, 6.2L V8",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636628100/RentMe/download_15_ajgvsi.jpg",
+        color:"Gray",
+        price:120,
+        Transmission:"Automatic",
+        user_id: rand(1..4)
+    )
+    cars.save!
+
+    cars = Car.new(
+        make: "Nissan Qashqai",
+        details: "Fuel-Comsumption: 6.2L/100km , Engine:1200cc",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636628148/RentMe/download_16_sbmdsd.jpg",
+        color:"Red",
+        price:25,
+        Transmission:"Automatic",
+        user_id: rand(1..4)
+    )
+    cars.save!
+
+    cars = Car.new(
+        make: "Hyundai Tucson",
+        details: "Fuel-Comsumption: 8L/100km, Engine:1600cc Turbo",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636628219/RentMe/download_17_yurbxl.jpg",
+        color:"Gold",
+        price:20,
+        Transmission:"Automatic",
+        user_id: rand(1..4)
+    )
+    cars.save!
+
+    cars = Car.new(
+        make: "Peugeot 308",
+        details: "Fuel-Comsumption: 6L/100km, Engine:1000cc",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636628351/RentMe/download_18_edx7ao.jpg",
+         color:"Green",
+        price:70,
+        Transmission:"Automatic",
+        user_id: rand(1..4)
+    )
+    cars.save!
+
+
+    cars = Car.new(
+        make: "Alfa Romeo Guilia",
+        details: "Fuel-Comsumption: 11.5L/100km, Engine:2900cc",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636628416/RentMe/download_19_wskufa.jpg",
+        color:"Red",
+        price:80,
+        Transmission:"Automatic",
+        user_id: rand(1..4)
+    )
+    cars.save!
+    cars = Car.new(
+        make: "BMW M8",
+        details: "Fuel-Comsumption: 12L/100km, Engine:4L V8",
+        image:"https://res.cloudinary.com/nass2912/image/upload/v1636628461/RentMe/download_20_nhiwaa.jpg",
+        color:" Dark Green",
+        price:100,
+        Transmission:"Automatic",
+        user_id: rand(1..4)
     )
     cars.save!
