@@ -11,10 +11,10 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
+          <%= link_to "Home", cars_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Bookings", "#", class: "nav-link" %>
+          <%= link_to "Bookings", bookings_path , class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
           <%= image_tag "https://media-exp1.licdn.com/dms/image/C4E03AQGTzvgHw8ZB4g/profile-displayphoto-shrink_800_800/0/1528730361141?e=1642032000&v=beta&t=halv98PREIV3D7nd54y3V-OSoS-QkSobKi--rBrigRc", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
