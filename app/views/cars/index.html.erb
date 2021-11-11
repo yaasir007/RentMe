@@ -5,9 +5,9 @@
 <div class= "container d-flex justify-content-around">
 <div class="card-trip">
   <%= cl_image_tag car.photo.key, height: 300, crop: :fill %>
-  <div class="centered"><%= link_to car.make, car_path(car) %></div>
+  <div class="centered"><%= link_to car.make, car_path(car), class: "nav-link" %></div>
   <div class="card-trip-infos">
-    <div>
+    <div class="nav-item">
       <p><%= car.details %></p>
       <p>Transmission: <%= car.Transmission %></p>
     </div>

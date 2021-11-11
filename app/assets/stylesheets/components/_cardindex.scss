@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 
 .card-trip {
   height: 250px;
@@ -18,15 +19,27 @@
   border-radius: 10px 10px;
 }
 
+.card-trip > img:hover {
+  opacity: 70%;
+}
+
 .centered {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
-  list-style: none;
-  text-decoration: none;
+  font-family: 'PT Serif', serif;
+  font-weight: bolder;
+  color: black;
+}
 
+.centered:hover {
+  color: rgb(47, 207, 255);
+  font-size: 25px;
+  font-family: 'PT Serif', serif;
+  text-align: center;
+  font-weight: bolder;
 }
 
 .card-trip h2 {
