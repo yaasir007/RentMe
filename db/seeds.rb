@@ -34,6 +34,26 @@ file5 = URI.open('https://images.pexels.com/photos/3874337/pexels-photo-3874337.
 car5 = Car.create(make: "Toyota Supra", details: "Fuel-Comsumption: 12L/100km, Engine:3.0L V6", color:"Black", price:120, Transmission:"Manual", user: User.last)
 car5.photo.attach(io: file5, filename: 'Toyota Supra', content_type: 'image/png')
 
+file6 = URI.open('https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?cs=srgb&dl=pexels-mike-2365572.jpg&fm=jpg')
+car6 = Car.create(make: "Mercedes GT63", details: "Fuel-Comsumption: 7L/100km, Engine:1800cc", color:"White", price:40, Transmission:"Manual", user: User.last)
+car6.photo.attach(io: file6, filename: 'Mercedes GT63', content_type: 'image')
+
+file7 = URI.open('https://images.unsplash.com/photo-1617917572835-5ab878656dcf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80')
+car7 = Car.create(make: "Ferrari 458 Speciale", details: "Fuel-Comsumption: 15L/100km, Engine:4.5L V8", color:"Red", price:120, Transmission:"Automatic", user: User.last)
+car7.photo.attach(io: file7, filename: 'Ferrari 458 Speciale', content_type: 'image')
+
+file8 = URI.open('https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3874337.jpg&fm=jpg')
+car8 = Car.create(make: "Toyota Supra", details: "Fuel-Comsumption: 12L/100km, Engine:3.0L V6", color:"Black", price:120, Transmission:"Manual", user: User.last)
+car8.photo.attach(io: file8, filename: 'Toyota Supra', content_type: 'image/png')
+
+file9 = URI.open('https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3874337.jpg&fm=jpg')
+car9 = Car.create(make: "Toyota Supra", details: "Fuel-Comsumption: 12L/100km, Engine:3.0L V6", color:"Black", price:120, Transmission:"Manual", user: User.last)
+car9.photo.attach(io: file9, filename: 'Toyota Supra', content_type: 'image/png')
+
+file10 = URI.open('https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3874337.jpg&fm=jpg')
+car10 = Car.create(make: "Toyota Supra", details: "Fuel-Comsumption: 12L/100km, Engine:3.0L V6", color:"Black", price:120, Transmission:"Manual", user: User.last)
+car10.photo.attach(io: file10, filename: 'Toyota Supra', content_type: 'image/png')
+
 #      cars = Car.new(
 #         make: "Mercedes GT63",
 #         details: "Fuel-Comsumption: 12L/100km, Engine:4.4L V8",
