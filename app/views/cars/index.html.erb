@@ -1,22 +1,21 @@
-<br>
 <h1 align="center">List of cars</h1>
-<div class="car-container">
-  <% @cars.each do |car| %>
 
-  <div class="card-trip">
-      <img src="<%=car.image%>" />
-      <div class="card-trip-infos">
-        <div>
-          <h2><%= link_to car.make, car_path(car) %></h2>
-
-          <p><%=car.color%></p>
-          <p><%=car.Transmission%></p>
-        </div>
-      <h2 class="card-trip-pricing">$<%=car.price%>/Day</h2>
-      </div>
+<div class="d-flex row">
+<% @cars.each do |car| %>
+<div class= "col-sm container d-flex justify-content-around m-3 ">
+<div class="card-trip">
+  <%= cl_image_tag car.photo.key, height: 300, crop: :fill %>
+  <div class="centered"><%= link_to car.make, car_path(car), class: "nav-link" %></div>
+  <div class="card-trip-infos">
+    <div class="nav-item">
+      <p><%= car.details %></p>
+      <p>Transmission: <%= car.Transmission %></p>
     </div>
-  <% end %>
+    <h2 class="card-trip-pricing">$<%= car.price %></h2>
+  </div>
 </div>
-<%# <%= cl_image_tag("wcedp11msfvsce2d2l8m",
-      width: 200, height: 100, crop: :fill) %>
-      <%# Please dont touch the line above %>
+</div>
+ <% end %>
+ </div>
+
+
