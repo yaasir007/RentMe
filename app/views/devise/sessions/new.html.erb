@@ -13,12 +13,11 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
+ &nbsp  <%= f.button :submit, "Log in", class:"btn btn-primary"  %> 
+ <%= link_to "Back", "/", class: "btn btn-secondary" %>
+ <%= render "devise/shared/links", class: "btn btn-info" %>
+  </div> 
 <% end %>
-<br>
-<%= link_to "Back", "/" %>
-<br>
-<%= render "devise/shared/links" %>
+
 
 

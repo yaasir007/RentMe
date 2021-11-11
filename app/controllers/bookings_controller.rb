@@ -19,12 +19,14 @@ class BookingsController < ApplicationController
         @booking.user = @user
         @booking.save!
         redirect_to car_path(@car)
+        flash[:alert] = "Booking Confirmed."
     end
 
     def destroy
         @booking = Booking.find(params[:id])
         @booking.destroy
         redirect_to car_bookings_path
+        flash[:alert] = "Booking Cancelled."
     end
 
     def show

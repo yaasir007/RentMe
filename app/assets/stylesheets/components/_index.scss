@@ -5,8 +5,16 @@
 @import "banner";
 @import "card";
 @import "cardindex";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .notice {
   background: lightyellow !important;
   display: none;
+}
+
+body {
+  background-color: #adb5bd;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
 }
