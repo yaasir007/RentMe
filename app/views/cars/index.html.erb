@@ -4,7 +4,7 @@
   <% @cars.each do |car| %>
 
   <div class="card-trip">
-      <img src="https://www.miniusa.com/content/dam/mini/models/jcw/modelsoverview/MINI-JCW-Image-03-1440.jpg.miniusaimg.small.jpeg" />
+      <img src="<%=car.image%>" />
       <div class="card-trip-infos">
         <div>
           <h2><%= link_to car.make, car_path(car) %></h2>
