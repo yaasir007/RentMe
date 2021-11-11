@@ -1,15 +1,50 @@
 <div align="center">
 <h1>Car Details</h1>
+
+<!-- Display the details of the car selected -->
+
 Make: <%= @car.make %><br>
 <%= @car.details %>
 
+<%= link_to "My Booking", car_bookings_path(@car), class: "btn btn-info"  %>
+</div>
+
+
+<!-- Display the booking form -->
+
+
+    <%= simple_form_for [@car, @booking], method: :post do |f| %>
+    <%= f.input :start_date %>
+    <%= f.input :end_date %>
+    <%= f.input :comment %>
+    <div align="center">
+    <%= f.button :submit, "Book Me" , class: "btn btn-success" %>
+    <% end %>
+    </div>
+
+    <br>
+
+
+<!-- Display all the reviews of the car selected -->
+
+<h1>Reviews</h1>
+<ul>
+    <% @reviews.each do |review| %>
+    <li> <%= review.feedback %> from <%= @user.first_name %></li>
+    <% end %>
+</ul>
+
+<!-- Display review form -->
+
+
+<%= simple_form_for [@car, @review] do |f| %>
+  <%= f.input :feedback, html5: true %>
+  <%= f.submit 'Create Review' %>
+<% end %>
+
 <br><br>
 <%= link_to  "Back", cars_path , class: "btn btn-info" %>
-&nbsp
-<%= link_to "Book Me", new_car_booking_path(@car), class: "btn btn-info" %>
-&nbsp
-<%= link_to "My Booking", car_bookings_path(@car), class: "btn btn-info"  %>
-&nbsp
-<%= link_to "Car Reviews", car_reviews_path(@car), class: "btn btn-info"  %>
 
-</div>
+
+
+

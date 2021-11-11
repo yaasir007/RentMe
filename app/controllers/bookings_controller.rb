@@ -18,7 +18,7 @@ class BookingsController < ApplicationController
         @booking.car = @car
         @booking.user = @user
         @booking.save!
-        redirect_to car_path(@car)
+        redirect_to car_bookings_path(@car)
         flash[:alert] = "Booking Confirmed."
     end
 
