@@ -14,7 +14,9 @@ Car.destroy_all
         color:"Black",
         price:120,
         Transmission:"Manual",
+
         user_id: rand(1..4)
+
     )
     cars.save!
     cars = Car.new(
@@ -24,6 +26,7 @@ Car.destroy_all
         color:"White",
         price:40,
         Transmission:"Manual",
+
         user_id: rand(1..4)
     )
     cars.save!
@@ -35,6 +38,7 @@ Car.destroy_all
         color:"Red",
         price:120,
         Transmission:"Automatic",
+
         user_id: rand(1..4)
     )
     cars.save!
@@ -46,6 +50,7 @@ Car.destroy_all
         color:"White",
         price:110,
         Transmission:"Automatic",
+
         user_id: rand(1..4)
     )
     cars.save!
@@ -57,6 +62,7 @@ Car.destroy_all
         color:"Yellow",
         price:140,
         Transmission:"Automatic",
+
         user_id: rand(1..4)
     )
     cars.save!
@@ -68,6 +74,7 @@ Car.destroy_all
         color:"Metallic Brown",
         price:120,
         Transmission:"Automatic",
+
         user_id: rand(1..4)
     )
     cars.save!
@@ -79,6 +86,7 @@ Car.destroy_all
         color:"Blue",
         price:25,
         Transmission:"Automatic",
+
         user_id: rand(1..4)
     )
     cars.save!
@@ -90,6 +98,7 @@ Car.destroy_all
         color:"Grey",
         price:20,
         Transmission:"Automatic",
+
         user_id: rand(1..4)
     )
     cars.save!
@@ -101,6 +110,7 @@ Car.destroy_all
          color:"Dark grey",
         price:70,
         Transmission:"Automatic",
+
         user_id: rand(1..4)
     )
     cars.save!
@@ -113,6 +123,7 @@ Car.destroy_all
         color:"Blue",
         price:80,
         Transmission:"Automatic",
+
         user_id: rand(1..4)
     )
     cars.save!
@@ -245,5 +256,6 @@ cars = Car.new(
         price:100,
         Transmission:"Automatic",
         user_id: rand(1..4)
+
     )
     cars.save!
