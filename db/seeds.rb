@@ -22,6 +22,18 @@ file2 = URI.open('https://images.unsplash.com/photo-1617917572835-5ab878656dcf?i
 car2 = Car.create(make: "Ferrari 458 Speciale", details: "Fuel-Comsumption: 15L/100km, Engine:4.5L V8", color:"Red", price:120, Transmission:"Automatic", user: User.last)
 car2.photo.attach(io: file2, filename: 'Ferrari 458 Speciale', content_type: 'image')
 
+file3 = URI.open('https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3874337.jpg&fm=jpg')
+car3 = Car.create(make: "Toyota Supra", details: "Fuel-Comsumption: 12L/100km, Engine:3.0L V6", color:"Black", price:120, Transmission:"Manual", user: User.last)
+car3.photo.attach(io: file3, filename: 'Toyota Supra', content_type: 'image/png')
+
+file4 = URI.open('https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3874337.jpg&fm=jpg')
+car4 = Car.create(make: "Toyota Supra", details: "Fuel-Comsumption: 12L/100km, Engine:3.0L V6", color:"Black", price:120, Transmission:"Manual", user: User.last)
+car4.photo.attach(io: file4, filename: 'Toyota Supra', content_type: 'image/png')
+
+file5 = URI.open('https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3874337.jpg&fm=jpg')
+car5 = Car.create(make: "Toyota Supra", details: "Fuel-Comsumption: 12L/100km, Engine:3.0L V6", color:"Black", price:120, Transmission:"Manual", user: User.last)
+car5.photo.attach(io: file5, filename: 'Toyota Supra', content_type: 'image/png')
+
 #      cars = Car.new(
 #         make: "Mercedes GT63",
 #         details: "Fuel-Comsumption: 12L/100km, Engine:4.4L V8",

@@ -1,8 +1,8 @@
 <h1 align="center">List of cars</h1>
 
-<div class="d-flex">
+<div class="d-flex row">
 <% @cars.each do |car| %>
-<div class= "container d-flex justify-content-around">
+<div class= "col-sm container d-flex justify-content-around m-3 ">
 <div class="card-trip">
   <%= cl_image_tag car.photo.key, height: 300, crop: :fill %>
   <div class="centered"><%= link_to car.make, car_path(car), class: "nav-link" %></div>
