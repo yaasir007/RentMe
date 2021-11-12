@@ -1,48 +1,67 @@
-<div align="center">
-<h1>Car Details</h1>
+<table>
 
-<!-- Display the details of the car selected -->
-
-Make: <%= @car.make %><br>
-<%= @car.details %>
-</div>
-
-
-<!-- Display the booking form -->
-
-
-    <%= simple_form_for [@car, @booking], method: :post do |f| %>
-    <%= f.input :start_date %>
-    <%= f.input :end_date %>
-    <%= f.input :comment %>
-    <div align="center">
-    <%= f.button :submit, "Book Me" , class: "btn btn-success" %>
-    <% end %>
-    </div>
-
-    <br>
+  <tr>
+    <td>
+      <div id="textes">
+        <h1>Car Details</h1><br>
+        <p>Make: <%= @car.make %><p>
+        <p><%= @car.details %></p>
+        <p>Transmission: <%= @car.Transmission %></p>
+        <%= cl_image_tag @car.photo.key, height: 300, crop: :fill %>
+      </div>
+    </td>
 
 
-<!-- Display all the reviews of the car selected -->
-
-<h1>Reviews</h1>
-<div>
-<ul>
-    <% @reviews.each do |review| %>
-    <% if review.car_id == @car.id %>
-    <li> <%= review.feedback %> - <%= @user.first_name %></li>
-    <% end %>
-    <% end %>
-</ul>
-</div>
-
-<!-- Display review form -->
 
 
-<%= simple_form_for [@car, @review] do |f| %>
-  <%= f.input :feedback, html5: true %>
-  <%= f.submit 'Create Review' %>
-<% end %>
+    <td>
+      <div>
+        <p align="center">New Booking Form</p>
+          <%= simple_form_for [@car, @booking], method: :post do |f| %>
+          <%= f.input :start_date %>
+          <%= f.input :end_date %>
+          <%= f.input :comment %>
+          <div align="center">
+            <%= f.button :submit, "Book Me" , class: "btn btn-success" %>
+            <%= link_to  "Back", cars_path , class: "btn btn-info" %>
+          <% end %>
+          </div>
+        <div>
+    </td>
+  </tr>
 
-<br><br>
-<%= link_to  "Back", cars_path , class: "btn btn-info" %>
+</table>
+<br><br><br>
+<table>
+
+  <tr>
+    <td id="reviews">
+      <h1>Reviews</h1>
+        <div>
+          <ul>
+            <% @reviews.each do |review| %>
+            <% if review.car_id == @car.id %>
+            <li> <%= review.feedback %> - <strong><i><%= @user.first_name %></i></strong></li>
+            <% end %>
+            <% end %>
+          </ul>
+        </div>
+      </td>
+
+
+    <td>
+      <div align="center">
+          <%= simple_form_for [@car, @review] do |f| %>
+          <%= f.input :feedback, html5: true %>
+          <div align="center">
+          <%= f.submit 'Create Review', class: "btn btn-success" %> <%= link_to  "Back", cars_path , class: "btn btn-info" %>
+        <% end %>
+        </div>
+      <div>
+    </td>
+  </tr>
+
+</table>
+
+<br><br><br>
+
