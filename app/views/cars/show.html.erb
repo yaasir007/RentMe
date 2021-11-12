@@ -40,8 +40,8 @@
         <div>
           <ul>
             <% @reviews.each do |review| %>
-            <% if review.car_id == @car.id %>
-            <li> <%= review.feedback %> - <strong><i><%= @user.first_name %></i></strong></li>
+            <% if review.car_id == @car.id%>
+            <li> <%= review.feedback %> - <strong><i>Anonymous</i></strong></li>
             <% end %>
             <% end %>
           </ul>
