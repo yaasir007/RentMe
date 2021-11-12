@@ -39,15 +39,5 @@ var options = {
   autoInsertCss: true,
 };
 
-var options1 = {
-  strings: ['Quick, Easy, Reliable car renting experience in Mauritius!'],
-  typeSpeed: 40,
-  loop: true,
-  loopCount: Infinity,
-  showCursor: false,
- 
-};
-
 var typed = new Typed('.element', options);
-var typed1 = new Typed('.type', options1);
 });
