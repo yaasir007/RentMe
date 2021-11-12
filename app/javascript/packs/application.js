@@ -20,6 +20,7 @@ ActiveStorage.start()
 
 // External imports
 import "bootstrap";
+import Typed from 'typed.js';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -27,4 +28,26 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+var options = {
+  strings: ['Welcome to RentMe!', 'Book a car in 3 simple steps!', 'Feel free to leave us a feedback!', 'Have a great day!'],
+  typeSpeed: 40,
+  smartBackspace: true,
+  loop: true,
+  loopCount: Infinity,
+  showCursor: false,
+  cursorChar: '|',
+  autoInsertCss: true,
+};
+
+var options1 = {
+  strings: ['Quick, Easy, Reliable car renting experience in Mauritius!'],
+  typeSpeed: 40,
+  loop: true,
+  loopCount: Infinity,
+  showCursor: false,
+ 
+};
+
+var typed = new Typed('.element', options);
+var typed1 = new Typed('.type', options1);
 });
