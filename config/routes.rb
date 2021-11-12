@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :bookings, only: [:index, :destroy]
   resources :cars do
     resources :reviews
-    resources :bookings, except: [:index, :destroy]
+    resources :bookings
   end
 
   devise_scope :user do
