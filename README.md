@@ -17,7 +17,6 @@ Because it enables them to: peacefully secure a car.
 ## Screenshots
 
 ![Home Page](/screenshots/homepage1.png "Home Page")
-
 ![Home Page](/screenshots/homepage2.png "Home Page")
 
 ![User-Side](/screenshots/user/user-homepage.png "User-Side")
