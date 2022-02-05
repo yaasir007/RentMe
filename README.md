@@ -5,7 +5,7 @@ For:  Drivers <br>
 Who need to: Book a car  <br>
 And want to: make a hassle-free car booking<br>
 They choose: RentMe<br>
-Because it enables them to: peacefully secure a car.
+Because it enables them to: peacefully secure a car. <br>
 </p>
 
 ## Links
@@ -33,13 +33,13 @@ Bundle install.
 Rails s.
 
 ## User Stories
-As a user, I can browse offers / Homepage so that I can compare cars.
-As a user , I can filter offers so that I can satisfy my choice.
-As a user, I can select an offer so that I can list all the details of that particular car.
-As a user, I can book a car so that I can confirm my booking.
-As a user, I can list all my bookings so that I keep track of my records.
-As a user, I can cancel a booking so that I can make a different choice.
-As a user, I can leave a review after a booking so that I can rate the service provided.
+As a user, I can browse offers / Homepage so that I can compare cars.<br>
+As a user , I can filter offers so that I can satisfy my choice.<br>
+As a user, I can select an offer so that I can list all the details of that particular car.<br>
+As a user, I can book a car so that I can confirm my booking.<br>
+As a user, I can list all my bookings so that I keep track of my records.<br>
+As a user, I can cancel a booking so that I can make a different choice.<br>
+As a user, I can leave a review after a booking so that I can rate the service provided.<br>
 
 
 ## Built With
