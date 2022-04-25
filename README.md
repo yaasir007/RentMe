@@ -51,7 +51,7 @@ As a user, I can leave a review after a booking so that I can rate the service p
 - CSS
 - SCSS
 - Bootstrap
-- Devise template
+- Devise
 
 ## Author
 **Mohammad Yaasir Cheekoory**
